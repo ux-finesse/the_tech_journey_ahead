@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #0c0e1d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  z-index: -1;
+}
+
+/*header styles*/
+header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header_cont {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80vw;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/*main styles*/
+main {
+  display: flex;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding-top: 50px;
+  position: relative;
+  z-index: -1;
+  top: 60px;
+}
+
+.main_cont {
+  display: flex;
+  gap: 70px;
+}
+
+.img_dtl {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+.info {
+  position: absolute;
+  left: 420px;
+}
+
+.info_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 20px;
+  overflow-y: scroll;
+}
+
+.info_cont p {
+  color: #fff;
+  line-height: 30px;
+}
+
+.info_cont h1 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 42px;
+}
+
+.dtl {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.dtl h4,
+.goals h4 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+.goals p,
+.dtl p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.goals {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.goals ul {
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+/*footer styles*/
+footer {
+  padding: 20px 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 1250px;
+}
+
+.footer_cont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: 90px auto 0;
+  align-items: center;
+}
+
+.copyright p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .logo{
+    margin-bottom: 10px;
+  }
+
+  .header_cont {
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h3 {
+    font: 22px;
+  }
+
+  main {
+    max-width: 90vw;
+    top: 60px;
+  }
+
+  .img_dtl {
+    display: flex;
+  }
+
+  .slack-img img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .info {
+    top: 740px;
+    left: 0;
+  }
+
+  footer {
+    top: 2520px;
+    z-index: -2;
+  }
+
+  .footer_cont {
+    max-width: 90vw;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: flex-start;
+  }
+}
